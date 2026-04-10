@@ -528,6 +528,20 @@ button {
   vertical-align: middle;
 }
 
+.publication-tier-tag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.65rem;
+  margin-bottom: 0.3rem;
+  padding: 0.26rem 0.6rem;
+  border-radius: var(--radius-pill);
+  background: var(--warm-soft);
+  color: var(--warm);
+  font-size: 0.8rem;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
 .publication-badges,
 .publication-links {
   display: flex;

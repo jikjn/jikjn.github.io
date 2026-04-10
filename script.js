@@ -19,7 +19,6 @@
       role: "PhD Student",
       summary:
         "I am a PhD student in Beijing working on AI for Science, Embodied AI, Multimodal Learning, World Models, and Multi-agent systems. My long-term goal is to build AI that expands the frontier of science, reshapes creative production, and eventually operates robustly in the physical world.",
-      portraitCaption: "Field trip photo, Jiuzhaigou, Sichuan",
       profileKicker: "Academic Profile",
       facts: [
         {
@@ -94,6 +93,7 @@
       title: "Recent papers and representative work.",
       allLink: "View full Google Scholar",
       titleTag: "First / Co-first",
+      tierTag: "CCF-A",
       paperLabel: "Paper",
       badges: {
         oral: "Oral",
@@ -162,7 +162,6 @@
       role: "博士生",
       summary:
         "我目前在北京大学从事博士阶段研究，关注 AI for Science、具身智能、多模态学习、世界模型与多智能体系统。我希望构建的不是只在 benchmark 上成立的模型，而是真正能够推动科学发现、重塑内容生产，并最终走向现实世界执行的 AI 系统。",
-      portraitCaption: "四川九寨沟实地照片",
       profileKicker: "学术信息",
       facts: [
         {
@@ -236,6 +235,7 @@
       title: "近期论文与代表性工作。",
       allLink: "查看完整 Google Scholar",
       titleTag: "一作 / 共一",
+      tierTag: "CCF-A会议",
       paperLabel: "论文",
       badges: {
         oral: "口头报告",
@@ -384,6 +384,7 @@ function renderPublications(locale) {
     const titleTag = publication.hasTitleTag
       ? `<span class="publication-title-tag">${locale.publications.titleTag}</span>`
       : "";
+    const tierTag = `<span class="publication-tier-tag">${locale.publications.tierTag}</span>`;
 
     const badges = publication.badges
       .map((badge) => {
@@ -408,7 +409,7 @@ function renderPublications(locale) {
         <div class="publication-year">${publication.year}</div>
         <div>
           <p class="publication-venue">${publication.venue}</p>
-          <h3 class="publication-title">${titleTag}${publication.title}</h3>
+          <h3 class="publication-title">${titleTag}${publication.title}${tierTag}</h3>
           ${badges ? `<div class="publication-badges">${badges}</div>` : ""}
           ${paperLink}
         </div>
@@ -487,7 +488,6 @@ function renderStaticText(locale) {
   setText("hero-alt-name", locale.hero.altName);
   setText("hero-role", locale.hero.role);
   setText("hero-summary", locale.hero.summary);
-  setText("portrait-caption", locale.hero.portraitCaption);
   setText("profile-kicker", locale.hero.profileKicker);
   setText("hero-scholar-link", locale.hero.links.scholar);
   setText("hero-github-link", locale.hero.links.github);
