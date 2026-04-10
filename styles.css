@@ -509,6 +509,33 @@ button {
   margin-top: 1rem;
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.6rem 0.95rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 252, 246, 0.82);
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.publication-link:hover {
+  transform: translateY(-2px);
+  background: var(--accent-soft);
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
