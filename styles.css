@@ -247,7 +247,7 @@ button {
 }
 
 .hero-role {
-  margin: 1rem 0 0;
+  margin: 1.2rem 0 0;
   color: var(--accent);
   font-size: 1.08rem;
   font-weight: 800;
@@ -341,10 +341,14 @@ button {
   border-radius: var(--radius-lg);
 }
 
+.profile-card-inline {
+  margin-top: 1.2rem;
+}
+
 .fact-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.2rem;
   margin: 0;
 }
 
@@ -724,7 +728,7 @@ button {
   }
 
   .hero-side {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: start;
   }
 
@@ -790,6 +794,10 @@ button {
   }
 
   .hero-side {
+    grid-template-columns: 1fr;
+  }
+
+  .fact-grid {
     grid-template-columns: 1fr;
   }
 
