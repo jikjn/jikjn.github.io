@@ -91,9 +91,13 @@
     publications: {
       kicker: "Selected Publications",
       title: "Recent papers and representative work.",
+      lead: "All works listed here were published in top conferences or journals in the field of artificial intelligence.",
       allLink: "View full Google Scholar",
       titleTag: "First / Co-first",
-      tierTag: "CCF-A",
+      tierLabels: {
+        A: "CCF-A",
+        B: "CCF-B"
+      },
       paperLabel: "Paper",
       badges: {
         oral: "Oral",
@@ -233,9 +237,13 @@
     publications: {
       kicker: "代表论文",
       title: "近期论文与代表性工作。",
+      lead: "以下列出的工作均发表于人工智能领域顶级会议或期刊。",
       allLink: "查看完整 Google Scholar",
       titleTag: "一作 / 共一",
-      tierTag: "CCF-A会议",
+      tierLabels: {
+        A: "CCF-A会议",
+        B: "CCF-B会议"
+      },
       paperLabel: "论文",
       badges: {
         oral: "口头报告",
@@ -292,6 +300,7 @@ const PUBLICATIONS = [
     venue: "CVPR 2026",
     title: "ChordEdit: One-Step Low-Energy Transport for Image Editing",
     hasTitleTag: true,
+    tier: "A",
     paperUrl: "https://arxiv.org/abs/2602.19083",
     badges: ["oral"]
   },
@@ -300,21 +309,42 @@ const PUBLICATIONS = [
     venue: "WWW 2026",
     title: "Riemannian Liquid Spatio-Temporal Graph Network",
     hasTitleTag: true,
+    tier: "A",
     paperUrl: "https://arxiv.org/abs/2601.14115",
     badges: ["oral"]
   },
   {
     year: "2026",
+    venue: "WSDM 2026",
+    title: "PR-CapsNet: Pseudo-Riemannian Capsule Network with Adaptive Curvature Routing for Graph Learning",
+    hasTitleTag: true,
+    tier: "B",
+    paperUrl: "https://arxiv.org/abs/2512.08218",
+    badges: []
+  },
+  {
+    year: "2026",
     venue: "ACL 2026",
     title: "MMErroR: A Benchmark for Erroneous Reasoning in Vision-Language Models",
+    tier: "A",
     paperUrl: "https://arxiv.org/abs/2601.03331",
     badges: ["main"]
+  },
+  {
+    year: "2025",
+    venue: "BIBM 2025",
+    title: "PC-UNet: An Enforcing Poisson Statistics U-Net for Positron Emission Tomography Denoising",
+    hasTitleTag: true,
+    tier: "B",
+    paperUrl: "https://arxiv.org/abs/2510.14995",
+    badges: []
   },
   {
     year: "2024",
     venue: "SIGKDD 2024",
     title: "A novel prompt tuning for graph transformers: Tailoring prompts to graph topologies",
     hasTitleTag: true,
+    tier: "A",
     paperUrl: "https://doi.org/10.1145/3637528.3671804",
     badges: []
   },
@@ -323,6 +353,7 @@ const PUBLICATIONS = [
     venue: "ACM MM 2024",
     title: "Beyond direct relationships: Exploring multi-order label pair dependencies for knowledge distillation",
     hasTitleTag: true,
+    tier: "A",
     paperUrl: "https://doi.org/10.1145/3664647.3681029",
     badges: []
   }
@@ -384,7 +415,9 @@ function renderPublications(locale) {
     const titleTag = publication.hasTitleTag
       ? `<span class="publication-title-tag">${locale.publications.titleTag}</span>`
       : "";
-    const tierTag = `<span class="publication-tier-tag">${locale.publications.tierTag}</span>`;
+    const tierTag = publication.tier
+      ? `<span class="publication-tier-tag">${locale.publications.tierLabels[publication.tier]}</span>`
+      : "";
 
     const badges = publication.badges
       .map((badge) => {
@@ -505,6 +538,7 @@ function renderStaticText(locale) {
 
   setText("publications-kicker", locale.publications.kicker);
   setText("publications-title", locale.publications.title);
+  setText("publications-lead", locale.publications.lead);
   setText("publications-all-link", locale.publications.allLink);
 
   setText("project-kicker", locale.project.kicker);
