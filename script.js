@@ -1,8 +1,8 @@
 ﻿const TRANSLATIONS = {
   en: {
-    pageTitle: "Jingchao Wang | Personal Homepage",
+    pageTitle: "Alizer Wong | Personal Homepage",
     metaDescription:
-      "Jingchao Wang is a PhD student at the School of Computer Science, Peking University, working on AI for Science, Embodied AI, Multimodal Learning, World Models, and Multi-agent systems.",
+      "Alizer Wong is a PhD student at the School of Computer Science, Peking University. Research spans AI for Science, Embodied AI, Multimodal Learning, World Models, and Multi-agent systems.",
     brandSub: "PKU CS",
     menu: "Menu",
     nav: {
@@ -14,11 +14,11 @@
     },
     hero: {
       kicker: "School of Computer Science, Peking University",
-      name: "Jingchao Wang",
-      altName: "王敬超",
+      name: "Alizer Wong",
+      altName: "",
       role: "PhD Student",
       summary:
-        "I am a PhD student in Beijing working on AI for Science, Embodied AI, Multimodal Learning, World Models, and Multi-agent systems. My long-term goal is to build AI that expands the frontier of science, reshapes creative production, and eventually operates robustly in the physical world.",
+        "Research focuses on AI for Science, Embodied AI, Multimodal Learning, World Models, and Multi-agent Systems, with long-term emphasis on scientific discovery, AI-native production, and real-world embodied deployment.",
       profileKicker: "Academic Profile",
       facts: [
         {
@@ -31,7 +31,7 @@
         },
         {
           label: "Email",
-          value: "ethanwangjc@163.com"
+          value: "aliiiiezer@gmail.com"
         },
         {
           label: "Open to",
@@ -46,13 +46,13 @@
     },
     about: {
       kicker: "About",
-      title: "Research interests rooted in scientific, embodied, and multimodal intelligence.",
+      title: "Research centered on scientific, embodied, and multimodal intelligence.",
       lead:
-        "My work focuses on building AI systems with scientific leverage, real-world agency, and long-horizon generative capability.",
+        "Current work studies AI systems with scientific leverage, real-world agency, and long-horizon generative capability.",
       paragraphs: [
-        "I am especially interested in AI for Science: systems that can discover new physical mechanisms, accelerate new-material discovery for energy, support automated theorem proving, and help attack major open conjectures.",
-        "At the same time, I care about AI-native content creation and simulation, including film production, game generation, world modeling, and multi-agent environments that can support richer commercial and entertainment experiences.",
-        "In the long run, I want general embodied intelligence to move from controlled demos to actual deployment, reducing structural labor bottlenecks in the physical world and enabling higher-impact human work."
+        "A central direction is AI for Science: systems capable of discovering new physical mechanisms, accelerating new-material discovery for energy, supporting automated theorem proving, and contributing to difficult open scientific problems.",
+        "A second direction concerns AI-native content creation and simulation, including film production, game generation, world modeling, and multi-agent environments that can support richer commercial and entertainment workflows.",
+        "A long-horizon objective is general embodied intelligence that can move beyond controlled demonstrations into real deployment, reducing structural labor bottlenecks in the physical world."
       ],
       interestKicker: "Research Interests",
       interests: [
@@ -63,7 +63,7 @@
         "Multi-agent Systems"
       ],
       interestNote:
-        "I am looking for collaborators and funding partners who want to build AI projects with genuine scientific or societal value."
+        "Research collaboration, strategic partnership, and funding for high-impact AI projects are welcome."
     },
     agenda: {
       kicker: "Research Agenda",
@@ -107,12 +107,12 @@
     },
     project: {
       kicker: "Selected Project",
-      heading: "A representative project for how I think about multi-agent systems.",
+      heading: "Representative project in multi-agent systems.",
       lead:
-        "Beyond papers, I care about building systems that turn deliberation into executable outcomes.",
+        "The project section highlights system-building work alongside publications.",
       title: "Multi-agent deliberation with historical and contemporary figures",
       summary:
-        "This project lets multiple famous figures question, support, supplement, advance, and converge around the same problem, then produce a conclusion closer to a real decision process than a one-shot answer.",
+        "The system organizes questioning, support, supplementation, advancement, and convergence among multiple well-known figures around the same problem, producing a conclusion closer to a real decision process than a one-shot answer.",
       points: [
         "Structured challenge, support, and synthesis between agents",
         "Designed for executable conclusions instead of shallow consensus",
@@ -136,21 +136,21 @@
     },
     contact: {
       kicker: "Contact",
-      title: "Open to research collaboration, strategic partnership, and funding.",
+      title: "Research collaboration, strategic partnership, and funding inquiries.",
       lead:
-        "If you are interested in frontier AI projects that can help science, production, or embodied deployment, feel free to reach out.",
-      emailLink: "Send Email",
+        "Inquiries related to frontier AI projects in science, production, and embodied deployment are welcome.",
+      emailLink: "aliiiiezer@gmail.com",
       githubLink: "GitHub Profile"
     },
     footer: {
-      text: "© 2026 Jingchao Wang.",
+      text: "© 2026 Alizer Wong.",
       backToTop: "Back to top"
     }
   },
   zh: {
-    pageTitle: "王敬超 | 个人主页",
+    pageTitle: "Alizer Wong | 个人主页",
     metaDescription:
-      "王敬超，北京大学计算机学院博士生，研究方向包括 AI for Science、具身智能、多模态学习、世界模型与多智能体系统。",
+      "Alizer Wong，北京大学计算机学院博士生，研究方向包括 AI for Science、具身智能、多模态学习、世界模型与多智能体系统。",
     brandSub: "北大计算机",
     menu: "菜单",
     nav: {
@@ -162,11 +162,11 @@
     },
     hero: {
       kicker: "北京大学计算机学院",
-      name: "王敬超",
-      altName: "Jingchao Wang",
+      name: "Alizer Wong",
+      altName: "",
       role: "博士生",
       summary:
-        "我目前在北京大学从事博士阶段研究，关注 AI for Science、具身智能、多模态学习、世界模型与多智能体系统。我希望构建的不是只在 benchmark 上成立的模型，而是真正能够推动科学发现、重塑内容生产，并最终走向现实世界执行的 AI 系统。",
+        "研究聚焦于 AI for Science、具身智能、多模态学习、世界模型与多智能体系统，长期方向包括科学发现、AI 原生内容生产与真实世界具身部署。",
       profileKicker: "学术信息",
       facts: [
         {
@@ -179,7 +179,7 @@
         },
         {
           label: "邮箱",
-          value: "ethanwangjc@163.com"
+          value: "aliiiiezer@gmail.com"
         },
         {
           label: "当前开放",
@@ -196,11 +196,11 @@
       kicker: "简介",
       title: "围绕科学智能、具身智能与多模态系统展开研究。",
       lead:
-        "我的核心兴趣在于构建具备科学价值、现实行动能力和长期生成能力的 AI 系统。",
+        "当前工作关注具有科学价值、现实行动能力和长期生成能力的 AI 系统。",
       paragraphs: [
-        "我尤其关注 AI for Science，希望用 AI 去突破人类科学的边界，包括发现新的物理机制、推动新材料发现与能源问题求解、支持自动定理证明，以及帮助解决重大开放猜想。",
-        "与此同时，我也关注 AI 对商业娱乐的赋能，例如 AI 电影制作、游戏生成、世界模拟以及多智能体环境，这些方向能够把生成模型与真实生产流程更紧密地连接起来。",
-        "更长期来看，我希望通用具身智能从受控演示走向现实部署，真正解决现实世界中的人力资源瓶颈，让人类把精力投入到更高价值的工作中。"
+        "重点方向之一是 AI for Science，包括利用 AI 发现新的物理机制、推动新材料发现与能源问题求解、支持自动定理证明，以及促进重大开放科学问题的研究。",
+        "另一重点方向是 AI 原生内容生产与世界模拟，例如 AI 电影制作、游戏生成、世界建模以及多智能体环境，这些方向有望把生成模型更紧密地连接到真实生产流程中。",
+        "长期目标是推动通用具身智能从受控演示走向现实部署，缓解现实世界中的结构性人力瓶颈。"
       ],
       interestKicker: "研究兴趣",
       interests: [
@@ -211,7 +211,7 @@
         "多智能体系统"
       ],
       interestNote:
-        "期待与真正关注高影响力 AI 项目的研究者、创业者和投资方合作，去做对人类有实际帮助的事情。"
+        "欢迎围绕高影响力 AI 项目的科研合作、战略合作与长期资助。"
     },
     agenda: {
       kicker: "研究方向",
@@ -254,12 +254,12 @@
     },
     project: {
       kicker: "代表项目",
-      heading: "一个比较能体现我对多智能体系统理解的项目。",
+      heading: "多智能体系统方向的代表性项目。",
       lead:
-        "除了论文，我也希望做能把推理、辩论和执行结论连接起来的系统。",
+        "项目部分展示与论文并行推进的系统型工作。",
       title: "让古今中外名人围绕同一问题展开多智能体推演",
       summary:
-        "这个项目让多个知名人物围绕同一个问题进行质疑、支持、补充、推进与收束，最终形成比单轮回答更接近真实决策过程的可执行结论。",
+        "该系统围绕同一问题组织多个知名人物进行质疑、支持、补充、推进与收束，最终形成比单轮回答更接近真实决策过程的可执行结论。",
       points: [
         "支持多智能体之间结构化地质疑、支持与综合",
         "目标不是表面一致，而是形成可执行的结论",
@@ -283,14 +283,14 @@
     },
     contact: {
       kicker: "联系",
-      title: "欢迎科研合作、战略合作与长期资助。",
+      title: "科研合作、战略合作与资助联系。",
       lead:
-        "如果你对能够真正推动科学、生产或现实部署的前沿 AI 项目感兴趣，欢迎直接联系我。",
-      emailLink: "发邮件",
+        "欢迎围绕能够推动科学、生产或现实部署的前沿 AI 项目进行联系。",
+      emailLink: "aliiiiezer@gmail.com",
       githubLink: "GitHub 主页"
     },
     footer: {
-      text: "© 2026 王敬超。",
+      text: "© 2026 Alizer Wong.",
       backToTop: "回到顶部"
     }
   }
@@ -394,6 +394,16 @@ function setText(id, value) {
   if (element) {
     element.textContent = value;
   }
+}
+
+function setOptionalText(id, value) {
+  const element = document.getElementById(id);
+  if (!element) {
+    return;
+  }
+
+  element.textContent = value || "";
+  element.hidden = !value;
 }
 
 function renderFacts(locale) {
@@ -558,7 +568,7 @@ function renderStaticText(locale) {
 
   setText("hero-kicker", locale.hero.kicker);
   setText("hero-name", locale.hero.name);
-  setText("hero-alt-name", locale.hero.altName);
+  setOptionalText("hero-alt-name", locale.hero.altName);
   setText("hero-role", locale.hero.role);
   setText("hero-summary", locale.hero.summary);
   setText("profile-kicker", locale.hero.profileKicker);

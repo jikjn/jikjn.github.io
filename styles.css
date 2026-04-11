@@ -38,6 +38,7 @@ body {
     linear-gradient(180deg, #fbfaf7 0%, var(--bg) 48%, #f3efe7 100%);
   font-family: var(--body-font);
   line-height: 1.65;
+  overflow-x: hidden;
 }
 
 img {
@@ -87,26 +88,31 @@ button {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
+  left: 0;
   top: 0;
   z-index: 40;
+  width: 248px;
+  height: 100vh;
   backdrop-filter: blur(18px);
-  background: rgba(247, 244, 238, 0.84);
-  border-bottom: 1px solid transparent;
+  background: rgba(247, 244, 238, 0.9);
+  border-right: 1px solid var(--line);
   transition: border-color 180ms ease, background 180ms ease;
 }
 
 .site-header.is-scrolled {
   border-color: var(--line);
-  background: rgba(247, 244, 238, 0.95);
+  background: rgba(247, 244, 238, 0.96);
 }
 
 .header-inner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  min-height: 5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  min-height: 100%;
+  padding: 1.6rem 0;
 }
 
 .brand {
@@ -129,14 +135,19 @@ button {
 
 .header-controls {
   display: flex;
-  align-items: center;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
 }
 
 .site-nav {
   display: flex;
-  align-items: center;
-  gap: 1.4rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
 }
 
 .site-nav a,
@@ -151,6 +162,10 @@ button {
   color: var(--accent);
 }
 
+.site-nav a {
+  font-weight: 700;
+}
+
 .lang-toggle {
   display: inline-flex;
   align-items: center;
@@ -159,6 +174,7 @@ button {
   border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 10px 20px rgba(19, 44, 69, 0.06);
+  margin-top: auto;
 }
 
 .lang-button {
@@ -188,13 +204,13 @@ button {
 }
 
 .hero {
-  padding-top: 3.2rem;
+  padding-top: 1.6rem;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.72fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
   align-items: start;
 }
 
@@ -214,6 +230,7 @@ button {
 .hero-main {
   padding: 2rem;
   border-radius: var(--radius-xl);
+  max-width: 900px;
 }
 
 .hero-kicker,
@@ -246,6 +263,11 @@ button {
   letter-spacing: 0.04em;
 }
 
+.hero-alt-name:empty,
+.hero-alt-name[hidden] {
+  display: none;
+}
+
 .hero-role {
   margin: 1.2rem 0 0;
   color: var(--accent);
@@ -275,16 +297,16 @@ button {
 .contact-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
-  margin-top: 1.6rem;
+  gap: 0.7rem;
+  margin-top: 1.35rem;
 }
 
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.9rem;
-  padding: 0.75rem 1.1rem;
+  min-height: 2.65rem;
+  padding: 0.65rem 0.95rem;
   border-radius: var(--radius-pill);
   border: 1px solid var(--line-strong);
   font-weight: 800;
@@ -309,8 +331,7 @@ button {
 }
 
 .hero-side {
-  display: grid;
-  gap: 1rem;
+  display: none;
 }
 
 .portrait-card {
@@ -723,6 +744,7 @@ button {
 }
 
 .site-footer {
+  margin-left: 272px;
   padding: 0 0 2.5rem;
 }
 
@@ -740,6 +762,10 @@ button {
 .footer-inner a {
   color: var(--accent);
   font-weight: 800;
+}
+
+main {
+  margin-left: 272px;
 }
 
 .reveal {
@@ -762,6 +788,47 @@ button {
 }
 
 @media (max-width: 1040px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid transparent;
+  }
+
+  .header-inner {
+    min-height: 5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .header-controls {
+    width: auto;
+    flex: initial;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-nav {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .lang-toggle {
+    margin-top: 0;
+  }
+
+  main,
+  .site-footer {
+    margin-left: 0;
+  }
+
   .hero-grid,
   .about-grid,
   .project-panel,
@@ -771,11 +838,6 @@ button {
 
   .agenda-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-side {
-    grid-template-columns: 1fr;
-    align-items: start;
   }
 
   .contact-actions {
@@ -801,6 +863,7 @@ button {
     width: 100%;
     flex-direction: column;
     align-items: stretch;
+    gap: 0.9rem;
   }
 
   .site-nav {
@@ -837,10 +900,6 @@ button {
   .section-heading h2,
   .contact-panel h2 {
     font-size: clamp(2.3rem, 12vw, 3.2rem);
-  }
-
-  .hero-side {
-    grid-template-columns: 1fr;
   }
 
   .fact-grid {
